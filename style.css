@@ -1,0 +1,282 @@
+body{
+    background-color: hsl(0, 0%, 10%);
+    margin: 0;
+    user-select: none;
+    font-family: 'B612', sans-serif;
+}
+#puzzleboard{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+#showboardContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    top: 150px;
+}
+#navbarContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    top: 10px;
+}
+#navbarContainerTwo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    top: 80px;
+}
+#navbarContainerThree{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    top: 425px;
+}
+#navbarContainerFour{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    top: 500px;
+}
+#arrowContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* height: 300px; */
+    /* width: 100px; */
+}
+#showboard{
+    width: 250px;
+    height: 250px;
+    background-image: url('img/showBoard.png');
+    /* background-position: 0 0px; */
+    background-size: 250px;
+}
+#timerDiv{
+    position: absolute;
+    width: 410px;
+    height: 50px;
+}
+#scoreDiv{
+    position: absolute;
+    width: 500px;
+    height: 820px;
+    color: white;
+    font-size: 30px;
+    border-radius: 43px;
+    background: #1a1a1a;
+    box-shadow:  9px 9px 18px #0f0f0f, 
+                -9px -9px 18px #252525;
+    outline:none;
+    z-index: 1;
+    transform: translate(-50px);
+}
+h3{
+    margin-left: 150px;
+}
+p{
+    margin-left: 40px;
+}
+.highScore{
+    position: absolute;
+    right: 10px;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    font-size: large;
+    border-radius: 43px;
+    background: #1a1a1a;
+    box-shadow:  9px 9px 18px #0f0f0f, 
+                -9px -9px 18px #252525;
+    outline:none;
+}
+.placeNine{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 0;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeEight{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 35px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeSeven{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 70px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeDot{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 105px;
+    background-image: url('cyferki/dot.gif');
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeSix{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 140px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeFive{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 175px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeFirstColon{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 210px;
+    background-image: url('cyferki/colon.gif');
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeFour{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 245px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeThree{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 280px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeSecondColon{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 315px;
+    background-image: url('cyferki/colon.gif');
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeTwo{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 350px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.placeOne{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    right: 385px;
+    /* background-image: url('cyferki/c0.gif'); */
+    background-repeat: no-repeat;
+    background-size: 35px 50px;
+}
+.buttonMix{
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    font-size: large;
+    border-radius: 43px;
+    background: #1a1a1a;
+    box-shadow:  9px 9px 18px #0f0f0f, 
+                -9px -9px 18px #252525;
+    outline:none;
+}
+#shuffle{
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: large;
+    border-radius: 43px;
+    background: #1a1a1a;
+    box-shadow:  6px 6px 12px #00ff2a79, 
+                -6px -6px 12px #00ff2a79;
+    outline:none;
+}
+#shuffleOff{
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: large;
+    border-radius: 43px;
+    background: #1a1a1a;
+    box-shadow:  6px 6px 12px #b42e2e, 
+                -6px -6px 12px #b42e2e;
+    outline:none;
+}
+#scrollLeft{
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: large;
+    border-radius: 43px;
+    background: #1a1a1a;
+    box-shadow:  9px 9px 18px #0f0f0f, 
+                -9px -9px 18px #252525;
+    outline:none;
+
+}
+#scrollRight{
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: large;
+    border-radius: 43px;
+    background: #1a1a1a;
+    box-shadow:  9px 9px 18px #0f0f0f, 
+                -9px -9px 18px #252525;
+    outline:none;
+
+}
+.image{
+    position: absolute;
+    border: 1px solid black;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    background-size: 600px;
+}
