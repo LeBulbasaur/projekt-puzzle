@@ -1,2 +1,2 @@
 # projekt-puzzle
-code is bleh but i was tired ok?
+Simple click and slide game for school project, quite hardcoded but practice makes perfect.
